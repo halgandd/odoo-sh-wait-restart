@@ -1,0 +1,8 @@
+version: '3'
+services:
+  test:
+    build: .
+    environment:
+      - INSTANCE_NAME=
+      - |
+        PRIVATE_KEY=

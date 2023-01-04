@@ -1,0 +1,10 @@
+# action.yml
+name: 'Odoo.sh wait restart instance'
+description: 'Wait odoo.sh instance restart'
+author: "David Halgand"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'refresh-cw'
+  color: 'red'
