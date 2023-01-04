@@ -32,8 +32,6 @@ until [ $TRY -eq 0 ] || odoo_sh_ssh $INSTANCE_ID@$INSTANCE_URL '
     cd /home/odoo/src/user
     REV=$(/usr/bin/git rev-parse HEAD)
     LAST_REV=$(cat /home/odoo/github_actions/last_revision)
-    echo "$REV"
-    echo "$LAST_REV"
     if [ "$REV" != "$LAST_REV" ]
     then
       exit 1
